@@ -1,0 +1,35 @@
+//
+// Header
+//
+
+// General
+
+
+// Desktop mode
+@include media-breakpoint-up(lg) {
+    .app-header {
+		.app-container {
+			[data-kt-app-header-sticky="on"] & {
+				margin-top: 0;	
+			}
+		}
+	}
+    
+	.header-search {
+        .search-input {
+            background: transparent;
+            border-color: var(--#{$prefix}header-search-border-bg-color);
+
+            @include placeholder($gray-500);
+        }
+
+        .search-icon {						 				 			 
+            color: $gray-600; 
+        } 
+    }
+}
+
+// Tablet & mobile modes
+@include media-breakpoint-down(lg) {
+    
+}

@@ -1,0 +1,11 @@
+//
+// Root
+//
+
+@include color-mode(light) {
+    --#{$prefix}header-search-border-bg-color: #{$app-header-base-search-border-color};
+}
+
+@include color-mode(dark) {
+    --#{$prefix}header-search-border-bg-color: #{$app-header-base-search-border-color-dark};
+}

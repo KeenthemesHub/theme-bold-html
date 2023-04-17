@@ -1,0 +1,1 @@
+<?php Theme::getView('partials/customizer/options/_toolbar', array("mode" => "builder"))?>
