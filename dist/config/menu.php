@@ -99,7 +99,7 @@ return array(
         array(            
             "pro" => true,
             "title" => "Authentication",
-            'icon' => Theme::getIcon("user", "fs-1"),
+            'icon' => Theme::getIcon("user", "fs-2"),
             'classes' => array('item' => 'menu-accordion ms-n5'),
             "attributes" => array(
                 "item" => array(
