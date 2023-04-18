@@ -185,7 +185,7 @@
         $icon-color:  var(--#{$prefix}gray-700), 
         $bullet-color: null, 
         $arrow-color: null, 
-        $bg-color: #F9F9F9,
+        $bg-color: var(--#{$prefix}gray-100),
         $all-links: true
     );  
 
@@ -202,8 +202,10 @@
                     width: 12px;	
                 }	
             }
-        }        
+        }
+
+        &.active {
+            border: var(--#{$prefix}app-separator-border); 
+        }          
     }    
 }       
-
-
