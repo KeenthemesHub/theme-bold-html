@@ -114,7 +114,7 @@ return array(
 
         // APPS
         array(
-        'title' => 'APPS',
+        'title' => 'Apps',
         'icon' => Theme::getIcon("chart-line-star", "fs-2"),
         'classes' => array('item' => 'menu-accordion ms-n5'),
         'attributes' => array("data-kt-menu-trigger" => "click"),
