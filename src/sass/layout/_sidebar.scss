@@ -79,7 +79,7 @@
             $icon-color: var(--#{$prefix}white), 
             $bullet-color: var(--#{$prefix}white), 
             $arrow-color: var(--#{$prefix}white), 
-            $bg-color: var(--#{$prefix}gray-900), 
+            $bg-color: null, 
             $all-links: false
         ); 
 
@@ -133,7 +133,7 @@
                 $icon-color: var(--#{$prefix}white), 
                 $bullet-color: var(--#{$prefix}white), 
                 $arrow-color: var(--#{$prefix}white), 
-                $bg-color: var(--#{$prefix}gray-900), 
+                $bg-color: var(--#{$prefix}sidebar-menu-link-bg-color),
                 $all-links: true
             ); 
         }

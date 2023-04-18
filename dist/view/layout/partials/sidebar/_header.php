@@ -14,7 +14,7 @@
     <!--begin::Logo-->
     <a href="<?php echo Theme::getPageUrl('index')?>" class="app-sidebar-logo">
         <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="h-20px d-none d-sm-inline app-sidebar-logo-default theme-light-show"/>
-        <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/demo38-dark.svg')?>" class="h-20px h-lg-25px theme-dark-show"/>
+        <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="h-20px theme-dark-show"/>
     </a>
     <!--end::Logo-->
 

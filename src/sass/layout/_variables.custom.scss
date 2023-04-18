@@ -47,7 +47,9 @@ $app-sidebar-base-box-shadow-dark: none;
 $app-sidebar-base-menu-link-title: #9BA0B8;
 $app-sidebar-base-menu-link-icon: #A1A5B7;
 $app-sidebar-base-menu-link-icon-dark: $white;
-$app-sidebar-base-menu-link-active: #1E1F27;  
+$app-sidebar-base-menu-link-active: #1E1F27;
+$app-sidebar-base-menu-link-bg-color: $gray-900; 
+$app-sidebar-base-menu-link-bg-color-dark: $gray-700-dark;   
 
 // Sidebar minimize
 $app-sidebar-minimize-width: 80px;

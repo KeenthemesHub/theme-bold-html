@@ -4,8 +4,10 @@
 
 @include color-mode(light) {
     --#{$prefix}header-search-border-bg-color: #{$app-header-base-search-border-color};
+    --#{$prefix}sidebar-menu-link-bg-color: #{$app-sidebar-base-menu-link-bg-color};
 }
 
 @include color-mode(dark) {
     --#{$prefix}header-search-border-bg-color: #{$app-header-base-search-border-color-dark};
+    --#{$prefix}sidebar-menu-link-bg-color: #{$app-sidebar-base-menu-link-bg-color-dark};
 }

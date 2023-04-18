@@ -1,3 +1,16 @@
+<?php
+    $nav = array(
+        array("title" => "Overview", "view" => "index"),
+        array("title" => "Settings", "view" => "account/settings"),              
+        array("title" => "Security", "view" => "account/security"),          
+        array("title" => "Billing", "view" => "account/billing"),        
+        array("title" => "Statements", "view" => "account/statements"),
+        array("title" => "Referrals", "view" => "account/referrals"),  
+        array("title" => "API Keys", "view" => "account/api-keys"),             
+        array("title" => "Logs", "view" => "account/logs"),        
+    );
+?>
+
 <!--begin::Toolbar wrapper-->
 <div class="app-toolbar-wrapper d-flex flex-stack flex-wrap gap-4 w-100">
     <?php if ( Theme::getOption('layout', 'app/page-title/display') === true && Theme::getOption('layout', 'app/header/default/page-title') !== true ):?>

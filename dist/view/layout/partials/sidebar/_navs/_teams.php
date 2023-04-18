@@ -40,13 +40,9 @@
 <div class="app-sidebar-menu-secondary menu menu-rounded menu-column mb-6">
     <!--begin::Heading-->
     <div class="menu-item mb-2">
-        <div class="menu-heading text-uppercase fs-7 fw-bold">
+        <div class="menu-heading text-uppercase fs-7 fw-bolder">
             Teams
         </div>
-
-        <!--begin::Separator-->
-        <div class="app-sidebar-separator separator"></div>
-        <!--end::Separator-->
     </div>
     <!--end::Heading-->
     <?php foreach($items as $each):?>
