@@ -104,7 +104,7 @@ return array(
                     "view" => "layout/partials/_header_", 
                     "class" => "",
                     "container" => "fluid", 
-                    "container-class" => "d-flex align-items-stretch flex-stack", 
+                    "container-class" => "d-flex align-items-stretch flex-stack mt-7", 
                     "fixed" => array(
                         "desktop" => true, 
                         "mobile" => true 
