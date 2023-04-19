@@ -16,8 +16,7 @@ return array(
             array(
                 'label' => 'UI Elements',
                 'pro' => '100',
-                'free' => '20',
-                'thumbnail' => 'demos/demo1.png'             
+                'free' => '20',          
             ),            
             array(
                 'label' => 'In-house Components',
