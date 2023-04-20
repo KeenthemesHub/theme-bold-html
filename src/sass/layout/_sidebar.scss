@@ -4,13 +4,6 @@
 
 // General mode
 .app-sidebar {
-    border-right: var(--#{$prefix}app-separator-border) !important;
-
-    .separator {
-        border-bottom: var(--#{$prefix}app-separator-border);
-        margin: 0.75rem 0;
-    }
-
     .menu-heading {
         color: var(--#{$prefix}gray-600);
     }
