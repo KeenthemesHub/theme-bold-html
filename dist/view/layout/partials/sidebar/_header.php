@@ -29,7 +29,7 @@
             data-kt-toggle-name="app-sidebar-<?php echo $toggleType?>"
             >
             
-            <?php echo Theme::getIcon("exit-left rotate-180", "fs-1 me-n4")?> 
+            <?php echo Theme::getIcon("exit-left", "fs-1 rotate-180 me-n4")?> 
         </div>
         <!--end::Sidebar toggle-->
     <?php endif?>

@@ -1,7 +1,7 @@
 <?php
 return array(  
-       // Product
-       'product' => array(
+    // Product
+    'product' => array(
         'version' => '1.0.0',
         'name' => 'Bold',
         'name-free' => 'Bold HTML Free',
@@ -94,7 +94,7 @@ return array(
                 "layout-type" => "default", // options: default|blank
                 'page-bg-white' => false, // Set true if page background color is white
                 "page-width" => "default",  // default/fluid|fixed  
-                "icons" => "solid", // solid|outline|duotone                  
+                "icons" => "duotone", // solid|outline|duotone                  
             ),
 
             "header" => array(

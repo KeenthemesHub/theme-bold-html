@@ -50,7 +50,7 @@
 
     <?php if ( Theme::getOption('layout', 'app/breadcrumb/display') === true && !empty($breadcrumb)):?>  
         <!--begin::Breadcrumb-->
-        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3">        
+        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3 d-flex">        
             <?php foreach ($breadcrumb as $item):?>  
                 <?php 
                     $index++;
@@ -79,8 +79,8 @@
 
                 <?php if (next($breadcrumb)):?>
                     <!--begin::Item-->
-                    <li class="breadcrumb-item">
-                        <?php echo Theme::getIcon("right", "fs-4 text-gray-700 mx-n2")?>                        
+                    <li class="breadcrumb-item mx-n1">
+                        <?php echo Theme::getIcon("right", "fs-4 text-gray-700")?>                        
                     </li>
                     <!--end::Item-->
                 <?php endif?>                        
