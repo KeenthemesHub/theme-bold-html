@@ -29,12 +29,8 @@
                 type="checkbox" 
                 <?php Util::putIf(Theme::getOption('layout', 'app/toolbar/display') === true, 'checked')?> 
                 value="true" 
-                name="layout-builder[layout][app][toolbar][display]" 
-                id="kt_builder_toolbar_display"/>
-
-            <!--begin::Label-->
-            <label class="form-check-label text-gray-700 fw-bold" for="kt_builder_toolbar_display"></label>
-            <!--end::Label-->
+                name="layout-builder[layout][app][toolbar][display]"
+            />
         </div>
         <!--end::Check-->
     </div>

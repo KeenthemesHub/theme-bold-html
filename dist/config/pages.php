@@ -2,31 +2,11 @@
 return array(
     'index' => array(
         'title' => 'Account',
-        'view' => 'index',
-        'layout' => array(
-            'app' => array(
-                "toolbar" => array(
-                    "display" => true
-                )  
-            ) 
-        ),
-        
+        'view' => 'index',        
         'assets' => array(
             'vendors' => array('fullcalendar', 'amcharts', 'amcharts-maps'),
         )
     ), 
-	
-	'account' => array(
-        "*" => array(
-            'layout' => array(
-                'app' => array(
-                    "toolbar" => array(
-                        "display" => true
-                    )  
-                ) 
-            )
-        )
-	),
 
     'pages' => array(
 		'general' => array(
