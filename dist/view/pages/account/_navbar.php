@@ -1,8 +1,9 @@
 <?php
     $nav = array(
-        array("title" => "Overview", "view" => "index"),
+        array("title" => "Overview", "view" => "account/overview"),
         array("title" => "Settings", "view" => "account/settings"),              
-        array("title" => "Security", "view" => "account/security"),          
+        array("title" => "Security", "view" => "account/security"),  
+        array("title" => "Activity", "view" => "account/activity"),         
         array("title" => "Billing", "view" => "account/billing"),        
         array("title" => "Statements", "view" => "account/statements"),
         array("title" => "Referrals", "view" => "account/referrals"),  
@@ -19,7 +20,7 @@
             <!--begin: Pic-->
             <div class="me-7 mb-4">
                 <div class="symbol symbol-100px symbol-lg-160px symbol-fixed position-relative">
-                    <img src="<?php echo Theme::getMediaUrlPath()?>avatars/300-3.jpg" alt="image" />
+                    <img src="<?php echo Theme::getImageUrl("avatars/300-3.jpg")?>" alt="image" />
                     <div class="position-absolute translate-middle bottom-0 start-100 mb-6 bg-success rounded-circle border border-4 border-body h-20px w-20px"></div>
                 </div>
             </div>
@@ -44,7 +45,7 @@
                         <div class="d-flex flex-wrap fw-semibold fs-6 mb-4 pe-2">
                             <a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
                                 <?php echo Theme::getIcon("profile-circle", "fs-4 me-1")?>
-                               React Developer
+                                React Developer
                             </a>
                             <a href="#" class="d-flex align-items-center text-gray-400 text-hover-primary me-5 mb-2">
                                 <?php echo Theme::getIcon("geolocation", "fs-4 me-1")?>
@@ -62,11 +63,11 @@
                     <!--begin::Actions-->
                     <div class="d-flex my-4">
                         <a href="#" class="btn btn-sm btn-light me-2" id="kt_user_follow_button">
-                            <?php echo Theme::getIcon("check", "fs-3 d-none")?>
+                            <?php echo Theme::getIcon("check", "fs-2 d-none")?>
                             <?php Theme::getView('partials/general/_button-indicator', array('label' => 'Follow'))?>
                         </a>
                         
-                        <a href="#" class="btn btn-sm btn-light me-2" <?php Theme::linkModal('offer-a-deal')?> >Hire Me</a>
+                        <a href="#" class="btn btn-sm btn-primary me-2" <?php Theme::linkModal('offer-a-deal')?> >Hire Me</a>
 
                         <!--begin::Menu-->
                         <div class="me-0">
@@ -91,7 +92,7 @@
                             <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
                                 <!--begin::Number-->
                                 <div class="d-flex align-items-center">
-                                    <?php echo Theme::getIcon("arrow-up", "fs-3 text-success me-2")?>
+                                    <?php echo Theme::getIcon("arrow-up", "fs-2 text-success me-2")?>
                                     <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="4500" data-kt-countup-prefix="$">0</div>
                                 </div>
                                 <!--end::Number-->
@@ -106,7 +107,7 @@
                             <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
                                 <!--begin::Number-->
                                 <div class="d-flex align-items-center">
-                                    <?php echo Theme::getIcon("arrow-down", "fs-3 text-danger me-2")?>
+                                    <?php echo Theme::getIcon("arrow-down", "fs-2 text-danger me-2")?>
                                     <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="75">0</div>
                                 </div>
                                 <!--end::Number-->
@@ -121,7 +122,7 @@
                             <div class="border border-gray-300 border-dashed rounded min-w-125px py-3 px-4 me-6 mb-3">
                                 <!--begin::Number-->
                                 <div class="d-flex align-items-center">
-                                    <?php echo Theme::getIcon("arrow-up", "fs-3 text-success me-2")?>
+                                    <?php echo Theme::getIcon("arrow-up", "fs-2 text-success me-2")?>
                                     <div class="fs-2 fw-bold" data-kt-countup="true" data-kt-countup-value="60" data-kt-countup-prefix="%">0</div>
                                 </div>
                                 <!--end::Number-->                                
@@ -154,6 +155,20 @@
             <!--end::Info-->
         </div>
         <!--end::Details-->   
+
+        <!--begin::Navs-->
+        <ul class="nav nav-stretch nav-line-tabs nav-line-tabs-2x border-transparent fs-5 fw-bold">
+            <?php foreach($nav as $each):?>
+                <!--begin::Nav item-->
+                <li class="nav-item mt-2">
+                    <a class="nav-link text-active-primary ms-0 me-10 py-5 <?php Util::putIf(Theme::getPagePath() === $each['view'], 'active')?>" href="<?php echo Theme::getPageUrl($each['view'])?>">
+                        <?php echo $each['title']?>
+                    </a>
+                </li>
+                <!--end::Nav item-->
+            <?php endforeach?>
+        </ul>
+        <!--begin::Navs-->
     </div>
 </div>
 <!--end::Navbar-->
