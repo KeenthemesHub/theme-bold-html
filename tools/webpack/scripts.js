@@ -20,8 +20,7 @@ window.KTSwapper = require('@/src/js/components/swapper.js');
 window.KTToggle = require('@/src/js/components/toggle.js');
 
 // Layout base js
-window.KTLayoutAside = require('@/src/js/layout/aside.js');
-window.KTLayoutHeader = require('@/src/js/layout/header.js');
-window.KTLayoutSearch = require('@/src/js/layout/search.js');
 window.KTThemeMode = require('@/src/js/layout/theme-mode.js');
 window.KTThemeModeUser = require('@/src/js/layout/theme-mode-user.js');
+window.KTLayoutSearch = require('@/src/js/layout/search.js');
+window.KTLayoutHeader = require('@/src/js/layout/sidebar.js');
