@@ -8,8 +8,8 @@
             <div class="d-flex flex-row-fluid flex-column align-items-center align-items-lg-start p-15 p-lg-20">          
                 <!--begin::Logo-->
                 <a href="<?php echo Theme::getPageUrl('index')?>" class="mb-15 mb-lg-20">
-                    <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="theme-light-show h-40px h-lg-50px"/>
-                    <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="theme-dark-show h-40px h-lg-50px"/>                  
+                    <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="theme-light-show h-40px h-lg-50px"/>
+                    <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="theme-dark-show h-40px h-lg-50px"/>                  
                 </a>    
                 <!--end::Logo-->
 
