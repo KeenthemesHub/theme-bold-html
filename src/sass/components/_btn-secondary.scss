@@ -14,3 +14,19 @@
 		$bg-color-active: var(--#{$prefix}gray-700),
 	);
 }
+
+@include color-mode(dark) {
+	// Secondary button
+	.btn.btn-secondary  {
+		@include button-custom-variant(
+			$color: var(--#{$prefix}gray-700),
+			$icon-color: white,
+			$border-color: null, 
+			$bg-color: #2A2A3C,
+			$color-active: var(--#{$prefix}gray-700),
+			$icon-color-active: null,
+			$border-color-active: null, 
+			$bg-color-active: #282838,
+		);
+	}
+}
