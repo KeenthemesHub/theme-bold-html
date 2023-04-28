@@ -17,7 +17,7 @@
     
 	.header-search {
         .search-input {
-            background: transparent;
+            background: var(--#{$prefix}app-bg-color);
             border-color: var(--#{$prefix}header-search-border-bg-color);
 
             @include placeholder($gray-500);
@@ -25,7 +25,9 @@
 
         .search-icon {						 				 			 
             color: $gray-600; 
-        } 
+        }
+        
+        
     }
 }
 
