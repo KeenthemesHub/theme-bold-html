@@ -4,8 +4,8 @@
     <div class="d-flex flex-row-fluid flex-column flex-column-fluid text-center p-10 py-lg-20">
         <!--begin::Logo-->
         <a href="<?php echo Theme::getPageUrl('index')?>" class="pt-lg-20 mb-12">
-            <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="theme-light-show h-40px h-lg-50px"/>
-            <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="theme-dark-show h-40px h-lg-50px"/>     
+            <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="theme-light-show h-40px h-lg-50px"/>
+            <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="theme-dark-show h-40px h-lg-50px"/>     
         </a> 
         <!--end::Logo-->
 
@@ -21,4 +21,3 @@
     <!--end::Illustration-->
 </div>
 <!--end::Authentication - <?php echo @$params['comment']?>-->
-                         

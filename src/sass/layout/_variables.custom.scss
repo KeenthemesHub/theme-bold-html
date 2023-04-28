@@ -34,8 +34,8 @@ $app-header-base-bg-color-dark: $app-bg-color-dark;
 // Header minimize
 $app-header-minimize-height: 90px;
 $app-header-minimize-height-mobile: 60px;
-$app-header-minimize-bg-color: #F4F4F4 0.6;
-$app-header-minimize-bg-color-dark: #151521 0.6;
+$app-header-minimize-bg-color: rgba($app-bg-color, 0.5);
+$app-header-minimize-bg-color-dark: rgba($app-bg-color-dark, 0.5);
 $app-header-minimize-backdrop-filter: blur(6px);
 $app-header-minimize-backdrop-filter-mobile: blur(6px);
 
