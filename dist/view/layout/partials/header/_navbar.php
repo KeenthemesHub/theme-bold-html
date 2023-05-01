@@ -58,7 +58,7 @@
             data-kt-menu-placement="<?php echo (Theme::isRtl() ? "bottom-start" : "bottom-end")?>">
             <img class="symbol <?php echo $userAvatarClass?>" src="<?php echo Theme::getImageUrl("avatars", "300-3.jpg")?>" alt="user"/>             
         </div>
-        <?php Theme::getView('partials/menus/_user-account-menu', array('theme-mode' => true, 'user-image' => 'avatars/300-3.jpg'))?>         
+        <?php Theme::getView('partials/menus/_user-account-menu', array('theme-mode' => true, 'user-image' => 'avatars/300-3.jpg', 'signout-url' => 'authentication/sign-in/basic'))?>                  
         <!--end::Menu wrapper-->
     </div>
     <!--end::User menu-->
