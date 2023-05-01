@@ -6,7 +6,8 @@
 
 	<!--begin::Logo image-->
     <a href="<?php echo Theme::getPageUrl('index')?>">
-		<img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="h-20px"/>
+	<img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="h-20px theme-light-show"/>
+        <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default-dark.svg')?>" class="h-20px theme-dark-show"/>
     </a>
     <!--end::Logo image-->
 </div>
