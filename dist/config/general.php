@@ -4,85 +4,19 @@ return array(
     'product' => array(
         'version' => '1.0.0',
         'name' => 'Bold',
-        'name-free' => 'Bold HTML Free',
-        'name-pro' => 'Bold HTML Pro',
-        'description' => 'Bold HTML ' . (Theme::isFreeVersion() ? 'Free ' : 'Pro') .  ' - Bootstrap 5 HTML Multipurpose Admin Dashboard Theme',       
-        'preview' => 'https://preview.keenthemes.com/bold-html' . (Theme::isFreeVersion() ? '-free' : '-pro'),
-        'purchase' => 'https://keenthemes.com/products/bold-html-pro',   
-        'free-download' => 'https://keenthemes.com/products/bold-html-free',
-        "docs" => 'https://preview.keenthemes.com/html/bold-html-pro/docs',
+        'description' => 'Craft - Bootstrap 5 HTML Multi-purpose Admin Dashboard Theme',        
+        'preview' => 'https://preview.keenthemes.com/bold',
+        'purchase' => 'https://preview.keenthemes.com/bold',
+        "docs" => 'https://preview.keenthemes.com/html/bold/docs',
         "login-path" => "authentication/sign-in/basic",
-        'comparision' => array(
-            array(
-                'label' => 'UI Elements',
-                'pro' => '100',
-                'free' => '20',          
-            ),            
-            array(
-                'label' => 'In-house Components',
-                'pro' => '40',
-                'free' => '20'                
-            ),    
-            array(
-                'label' => 'Crafted Pages',
-                'pro' => '20',
-                'free' => '5'                
-            ),     
-            array(
-                'label' => 'Complete Documentation',
-                'pro' => true,
-                'free' => true
-            ),           
-            array(
-                'label' => 'Product Support',
-                'url' => 'https://keenthemes.com/support',
-                'pro' => true,
-                'free' => false
-            ),
-            array(
-                'label' => 'Layout Builder',
-                'pro' => true,
-                'free' => false  
-            ),
-            array(
-                'label' => 'Source Vectors',
-                'pro' => true,
-                'free' => false             
-            ),
-            array(
-                'label' => 'Email Templates',
-                'pro' => true,
-                'free' => false             
-            ),
-            array(
-                'label' => 'User Management App',
-                'pro' => true,
-                'free' => false             
-            ),
-            array(
-                'label' => 'Calendar App',
-                'pro' => true,
-                'free' => false             
-            ),
-            array(
-                'label' => 'Chat App',
-                'pro' => true,
-                'free' => false             
-            ), 
-            array(
-                'label' => 'Customers App',
-                'pro' => true,
-                'free' => false             
-            )     
-        )
     ),
 
     // Meta
     'meta' => array(
-        'title' =>  'Bold HTML ' . (Theme::isFreeVersion() ? 'Free ' : 'Pro') .  '- Bootstrap 5 HTML Multipurpose Admin Dashboard Theme',       
+        'title' => 'Bold | Bootstrap 5 HTML Admin Dashboard Theme',
         'description' => 'Bold admin dashboard live demo. Check out all the features of the admin panel. A large number of settings, additional services and widgets.',
-        'keywords' => 'Bold theme, bootstrap, bootstrap 5, admin themes, free admin themes, bootstrap admin, bootstrap dashboard',
-        'canonical' => 'https://preview.keenthemes.com/bold-html' . (Theme::isFreeVersion() ? '-free' : '-pro')
+        'keywords' => 'Bold, bootstrap, bootstrap 5, admin themes, dark mode, free admin themes, bootstrap admin, bootstrap dashboard',
+        'canonical' => 'https://preview.keenthemes.com/bold'
     ),
      
     // Layout
@@ -219,6 +153,16 @@ return array(
                 2 => "toolbar",
                 3 => "header"                   
             )  
-        )                  
+        ),
+            
+        'engage' => array(
+            'help' => array(
+                'enabled' => true
+            ),
+
+            'purchase' => array(
+                'enabled' => true
+            )
+        )    
     )
 );
