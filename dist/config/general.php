@@ -2,7 +2,7 @@
 return array(  
     // Product
     'product' => array(
-        'version' => '1.0.1',
+        'version' => '1.0.0',
         'name' => 'Bold',
         'description' => 'Craft - Bootstrap 5 HTML Multi-purpose Admin Dashboard Theme',        
         'preview' => 'https://preview.keenthemes.com/bold',
