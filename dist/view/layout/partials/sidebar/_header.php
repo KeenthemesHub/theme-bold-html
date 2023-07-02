@@ -10,7 +10,7 @@
     }
 ?>
 
-<div class="app-sidebar-header d-flex flex-stack d-none d-lg-flex pt-8 pb-2" id="kt_app_sidebar_header">  
+<div class="app-sidebar-header d-flex flex-stack d-none d-lg-flex pt-8 pb-2 px-8" id="kt_app_sidebar_header">  
     <!--begin::Logo-->
     <a href="<?php echo Theme::getPageUrl('index')?>" class="app-sidebar-logo">
         <img alt="Logo" src="<?php echo Theme::getImageUrl('logos/default.svg')?>" class="h-20px d-none d-sm-inline app-sidebar-logo-default theme-light-show"/>

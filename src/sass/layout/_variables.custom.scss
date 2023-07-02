@@ -42,7 +42,6 @@ $app-header-minimize-backdrop-filter-mobile: blur(6px);
 // Sidebar base
 $app-sidebar-base-width: 280px;
 $app-sidebar-base-width-mobile: 280px;
-$app-sidebar-base-px: 25px;
 $app-sidebar-base-separator-color: 1px solid rgba(217, 219, 228, 0.6);
 $app-sidebar-base-bg-color: $body-bg;
 $app-sidebar-base-bg-color-dark: $body-bg-dark;
@@ -60,7 +59,9 @@ $app-sidebar-minimize-width: 80px;
 $app-sidebar-minimize-bg-color: $body-bg;
 $app-sidebar-minimize-bg-color-dark: $body-bg-dark;
 $app-sidebar-minimize-menu-link-width: 53px;
-$app-sidebar-minimize-px: 13px;
+$app-sidebar-minimize-header-px: 20px;
+$app-sidebar-minimize-primary-px: 20px;
+$app-sidebar-minimize-secondary-px: 5px;
 
 // Footer
 $app-footer-height: auto;

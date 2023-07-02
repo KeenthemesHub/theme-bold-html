@@ -14,12 +14,10 @@
 }
 
 .app-sidebar-header {
-    padding: 0 $app-sidebar-base-px;
     @include app-layout-transition(padding);
 }
 
 .app-sidebar-menu-primary.menu {
-    padding: 0 $app-sidebar-base-px;
     @include app-layout-transition(padding);
 
     // Root items
@@ -134,7 +132,6 @@
 } 
 
 .app-sidebar-menu-secondary.menu {
-    padding: 0 $app-sidebar-base-px;
     @include app-layout-transition(padding);
 
     @include menu-link-default-state( 

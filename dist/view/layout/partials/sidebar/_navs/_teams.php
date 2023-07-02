@@ -37,7 +37,7 @@
 ?>
 
 <!--begin::Teams-->
-<div class="app-sidebar-menu-secondary menu menu-rounded menu-column mb-6">
+<div class="app-sidebar-menu-secondary menu menu-rounded menu-column mb-3 ps-6 pe-4">
     <!--begin::Heading-->
     <div class="menu-item mb-2">
         <div class="menu-heading text-uppercase fs-7 fw-bolder">

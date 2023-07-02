@@ -3,7 +3,7 @@
 // Class definition
 var KTAppSidebar = function () {
 	// Private variables
-	var wrapper;
+	var scroll;
 	var sidebar;
 	var toggle;
 
@@ -38,18 +38,18 @@ var KTAppSidebar = function () {
 	}
 
 	var handleMenuScroll = function() {
-		var menuActiveItem = wrapper.querySelector(".menu-link.active");
+		var menuActiveItem = scroll.querySelector(".menu-link.active");
 
 		if ( !menuActiveItem ) {
 			return;
 		} 
 
-		if ( KTUtil.isVisibleInContainer(menuActiveItem, wrapper) === true) {
+		if ( KTUtil.isVisibleInContainer(menuActiveItem, scroll) === true) {
 			return;
 		}
 
-		wrapper.scroll({
-			top: KTUtil.getRelativeTopPosition(menuActiveItem, wrapper),
+		scroll.scroll({
+			top: KTUtil.getRelativeTopPosition(menuActiveItem, scroll),
 			behavior: 'smooth'
 		});
 	}
@@ -59,14 +59,14 @@ var KTAppSidebar = function () {
 		init: function () {
 			// Elements
 			toggle = document.querySelector('#kt_app_sidebar_toggle');
-			wrapper = document.querySelector('#kt_app_sidebar_navs_wrappers');
+			scroll = document.querySelector('#kt_app_sidebar_navs_scroll');
 			sidebar = document.querySelector('#kt_app_sidebar');
 
 			if ( toggle ) {
 				handleToggle();	
 			}
 			
-			if ( wrapper ) {
+			if ( scroll ) {
 				handleMenuScroll();
 			}
 		}

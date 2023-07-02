@@ -5,7 +5,7 @@
 // Desktop sidebar minimize mode
 @include app-layout-minimize(app-sidebar) {
     .app-sidebar-header {
-        padding: 0 $app-sidebar-minimize-px;
+        padding-left: $app-sidebar-minimize-header-px !important;
         justify-content: center !important;
 
         .app-sidebar-logo {
@@ -19,8 +19,6 @@
 
     .app-sidebar-menu-primary,
     .app-sidebar-menu-secondary {
-        padding: 0 $app-sidebar-minimize-px;
-
         > .menu-item > .menu-link {
             width: $app-sidebar-minimize-menu-link-width;
         }
@@ -39,5 +37,15 @@
             overflow: hidden;
             @include app-layout-transition(height);
         }
+    }
+
+    .app-sidebar-menu-primary {        
+        padding-left: $app-sidebar-minimize-primary-px !important;
+        padding-right: $app-sidebar-minimize-primary-px !important;
+    }
+
+    .app-sidebar-menu-secondary {
+        padding-left: $app-sidebar-minimize-secondary-px !important;
+        padding-right: $app-sidebar-minimize-secondary-px !important;
     }
 }

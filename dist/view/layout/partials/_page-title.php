@@ -43,14 +43,14 @@
 <!--begin::Page title-->
 <div class="page-title d-flex align-items-center gap-1 me-3" <?php Util::putHtmlAttributes($attributes)?>>
     <!--begin::Title-->
-    <span class="text-gray-900 fw-bolder fs-2x">
+    <span class="text-gray-900 fw-bolder fs-2x lh-1">
         <?php echo $title?>        
     </span>
     <!--end::Title--> 
 
     <?php if ( Theme::getOption('layout', 'app/breadcrumb/display') === true && !empty($breadcrumb)):?>  
         <!--begin::Breadcrumb-->
-        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3 d-flex">        
+        <ul class="breadcrumb breadcrumb-separatorless fw-semibold fs-base ms-3 d-flex mb-0">        
             <?php foreach ($breadcrumb as $item):?>  
                 <?php 
                     $index++;
