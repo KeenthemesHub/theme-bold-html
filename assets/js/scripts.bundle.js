@@ -309,25 +309,6 @@ var KTApp = function () {
 
             element.setAttribute("data-kt-initialized", "1");
         });
-
-        /*
-        * Hacky fix for a bug in select2 with jQuery 3.6.0's new nested-focus "protection"
-        * see: https://github.com/select2/select2/issues/5993
-        * see: https://github.com/jquery/jquery/issues/4382
-        *
-        * TODO: Recheck with the select2 GH issue and remove once this is fixed on their side
-        */
-
-        if (select2FocusFixInitialized === false) {
-            select2FocusFixInitialized = true;
-            
-            $(document).on('select2:open', function(e) {
-                var elements = document.querySelectorAll('.select2-container--open .select2-search__field');
-                if (elements.length > 0) {
-                    elements[elements.length - 1].focus();
-                }                
-            });
-        }
     }
 
     var createAutosize = function () {
@@ -1004,6 +985,7 @@ var KTDialer = function(element, options) {
         min: null,
         max: null,
         step: 1,
+        currency: false,
         decimals: 0,
         prefix: "",
         suffix: ""
@@ -1034,6 +1016,10 @@ var KTDialer = function(element, options) {
         the.inputElement = the.element.querySelector('input[type]'); 
         
         // Set Values
+        if (_getOption('currency') === 'true') {
+            the.options.currency = true;
+        }
+
         if (_getOption('decimals')) {
             the.options.decimals = parseInt(_getOption('decimals'));
         }
@@ -1164,7 +1150,13 @@ var KTDialer = function(element, options) {
 
     // Format
     var _format = function(val){
-        return the.options.prefix + parseFloat(val).toFixed(the.options.decimals) + the.options.suffix;              
+        val = parseFloat(val).toFixed(the.options.decimals);
+
+        if (the.options.currency) {
+            val = val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+        }        
+
+        return the.options.prefix + val + the.options.suffix;              
     }
 
     // Get option

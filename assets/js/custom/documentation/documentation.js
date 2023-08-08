@@ -98,7 +98,7 @@ var KTLayoutDocumentation = function() {
                 const paths = parseInt(this.getAttribute('data-kt-icon-paths'));
                 selectedIconCode = escapeHtml('<i class="ki-duotone ki-' + selectedIconName + '">');
                 for (let i = 1; i <= paths; i++) {
-                    selectedIconCode += escapeHtml('\n <i class="path' + i + '"></i>');
+                    selectedIconCode += escapeHtml('\n <span class="path' + i + '"></span>');
                 }
                 selectedIconCode += escapeHtml('\n</i>');
             } else {
