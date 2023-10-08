@@ -10,7 +10,7 @@
     <!--begin::Actions-->
     <div class="d-flex align-self-center flex-center flex-shrink-0">
         <a href="#" class="btn btn-sm btn-secondary d-flex flex-center ms-3 px-4 py-3" <?php Theme::linkModal('invite-friends')?>>
-            <?php echo Theme::getIcon("plus-square", "fs-2 text-gray-400")?> 
+            <?php echo Theme::getIcon("plus-square", "fs-2 text-gray-500")?> 
             <span>Invite</span>
         </a>    
 

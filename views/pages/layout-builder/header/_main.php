@@ -2,7 +2,7 @@
 <div class="form-group d-flex flex-stack">           
     <!--begin::Heading-->     
     <div class="d-flex flex-column">
-        <h4 class="fw-bold text-dark">Fixed</h4>
+        <h4 class="fw-bold text-gray-900">Fixed</h4>
         <div class="fs-7 fw-semibold text-muted">
             Fixed header mode
         </div>							

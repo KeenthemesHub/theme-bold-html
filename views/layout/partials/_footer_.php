@@ -1,5 +1,5 @@
 <!--begin::Copyright-->
-<div class="text-dark order-2 order-md-1">
+<div class="text-gray-900 order-2 order-md-1">
     <span class="text-muted fw-semibold me-1"><?php echo date("Y")?>&copy;</span>
     <a href="<?php echo Theme::getOption('general', 'website')?>" target="_blank" class="text-gray-800 text-hover-primary">Keenthemes</a>
 </div>

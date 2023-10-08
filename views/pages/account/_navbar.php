@@ -98,7 +98,7 @@
                                 <!--end::Number-->
 
                                 <!--begin::Label-->
-                                <div class="fw-semibold fs-6 text-gray-400">Earnings</div>
+                                <div class="fw-semibold fs-6 text-gray-500">Earnings</div>
                                 <!--end::Label-->
                             </div>
                             <!--end::Stat-->
@@ -113,7 +113,7 @@
                                 <!--end::Number-->
 
                                 <!--begin::Label-->
-                                <div class="fw-semibold fs-6 text-gray-400">Projects</div>
+                                <div class="fw-semibold fs-6 text-gray-500">Projects</div>
                                 <!--end::Label-->
                             </div>
                             <!--end::Stat-->
@@ -128,7 +128,7 @@
                                 <!--end::Number-->                                
 
                                 <!--begin::Label-->
-                                <div class="fw-semibold fs-6 text-gray-400">Success Rate</div>
+                                <div class="fw-semibold fs-6 text-gray-500">Success Rate</div>
                                 <!--end::Label-->
                             </div>
                             <!--end::Stat-->
@@ -140,7 +140,7 @@
                     <!--begin::Progress-->
                     <div class="d-flex align-items-center w-200px w-sm-300px flex-column mt-3">
                         <div class="d-flex justify-content-between w-100 mt-auto mb-2">
-                            <span class="fw-semibold fs-6 text-gray-400">Profile Compleation</span>
+                            <span class="fw-semibold fs-6 text-gray-500">Profile Compleation</span>
                             <span class="fw-bold fs-6">50%</span>
                         </div>
 

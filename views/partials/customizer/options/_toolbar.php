@@ -6,7 +6,7 @@
 <div class="form-group d-flex flex-stack">           
     <!--begin::Heading-->     
     <div class="d-flex flex-column">
-        <h4 class="fw-bold text-dark">Toolbar</h4>
+        <h4 class="fw-bold text-gray-900">Toolbar</h4>
         <div class="fs-7 fw-semibold text-muted">
             Enable or disable Toolbar
 

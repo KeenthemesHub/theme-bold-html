@@ -14,7 +14,7 @@
                 <!--end::Logo-->
 
                 <!--begin::Title-->
-                <h1 class="text-dark fs-3x mb-5">Welcome, Guest!</h1>          
+                <h1 class="text-gray-900 fs-3x mb-5">Welcome, Guest!</h1>          
                 <!--end::Title-->
 
                 <!--begin::Description-->
