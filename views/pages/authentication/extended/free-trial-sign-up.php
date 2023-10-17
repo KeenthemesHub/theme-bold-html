@@ -18,7 +18,7 @@
                 <!--end::Title-->
 
                 <!--begin::Description-->
-                <div class="fw-semibold fs-3 text-gray-400 mb-10">
+                <div class="fw-semibold fs-3 text-gray-500 mb-10">
                     Plan your blog post by choosing a topic creating <br/>
                     an outline and checking facts
                 </div>

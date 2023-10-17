@@ -65,7 +65,7 @@
                         <?php if (isset($item['path']) && !empty($item['path']) ):?>
                             <a href="<?php echo Theme::getPageUrl($item['path'])?>" class="text-gray-700 text-hover-primary">
                                 <?php if($item['title'] === "Home"):?>
-                                    <?php echo Theme::getIcon("home", "fs-3 text-gray-400 ms-2")?>  
+                                    <?php echo Theme::getIcon("home", "fs-3 text-gray-500 ms-2")?>  
                                 <?php else:?>
                                     <?php echo $item['title']?>
                                 <?php endif?>
