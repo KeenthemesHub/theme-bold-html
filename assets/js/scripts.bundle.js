@@ -290,7 +290,11 @@ var KTApp = function () {
                 var parentEl = document.querySelector(element.getAttribute('data-dropdown-parent'));
 
                 if (parentEl && parentEl.hasAttribute("data-kt-menu")) {
-                    var menu = new KTMenu(parentEl);
+                    var menu = KTMenu.getInstance(parentEl);
+                    
+                    if (!menu) {
+                        menu = new KTMenu(parentEl);
+                    }
 
                     if (menu) {
                         $(element).on('select2:unselect', function (e) {
@@ -427,7 +431,8 @@ var KTApp = function () {
                 return;
             }
 
-            initTinySlider(el);
+            const obj = initTinySlider(el);
+            KTUtil.data(el).set('tns', tns);
 
             el.setAttribute("data-kt-initialized", "1");
         });
@@ -2313,6 +2318,10 @@ var KTMenu = function(element, options) {
     // Event Handlers
     // Toggle handler
     var _click = function(element, e) {
+        if (element.hasAttribute('href') && element.getAttribute("href") !== "#") {
+            return;
+        }
+        
         e.preventDefault();
 
         if (the.disabled === true) {
