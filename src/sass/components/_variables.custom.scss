@@ -5,40 +5,24 @@
 //
 
 // Theme colors
-$primary:       									#50cd89;
-$primary-active:    								#47be7d;
-$primary-light:    								    #e8fff3;
-$primary-light-dark:							    #1c3238;
-$primary-inverse:  									#FFFFFF;
+// Primary colors
+$success:						#1B84FF !default;
+$success-active:				#056EE9 !default;
+$success-light: 				#E9F3FF !default;
+$success-clarity: 				rgba(#1B84FF, 0.2) !default;
 
-// Success
-$success:       									#3E97FF;
-$success-active:    								#2884Ef;
-$success-light:    									#EEF6FF;
-$success-light-dark:    							#212E48;
-$success-inverse:  									#FFFFFF;
+$success-dark:						#006AE6 !default;
+$success-active-dark:				#107EFF !default;
+$success-light-dark: 				#172331 !default;
+$success-clarity-dark: 				rgba(#006AE6, 0.2) !default;
 
-// Info
-$info:       									    #7239ea;
-$info-active:    									#5014d0;
-$info-light:    									#f8f5ff;
-$info-light-dark:    								#2f264f;
-$info-inverse:  									#FFFFFF;
+// Success colors
+$primary: 						#17C653 !default; 
+$primary-active: 				#04B440 !default;
+$primary-light: 				#DFFFEA !default;
+$primary-clarity: 				rgba(#17C653, 0.2) !default;
 
-// Danger
-$danger:       									    #f1416c;
-$danger-active:    									#d9214e;
-$danger-light:    									#fff5f8;
-$danger-light-dark:    								#3a2434;
-$danger-inverse:  									#FFFFFF;
-
-// Warning
-$warning:       									#ffc700;
-$warning-active:    								#f1bc00;
-$warning-light:    									#fff8dd;
-$warning-light-dark:    							#392f28;
-$warning-inverse:  									#FFFFFF;
-
-// Card
-$card-box-shadow: 									none; 
-$card-border-enabled: 								true;
+$primary-dark: 						#00A261 !default; 
+$primary-active-dark: 				#01BF73 !default;
+$primary-light-dark: 				#1F212A !default;
+$primary-clarity-dark: 				rgba(#00A261, 0.2) !default;

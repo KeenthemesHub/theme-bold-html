@@ -13,6 +13,7 @@
 @import "components/variables.custom";
 @import "../../../../../core/html/src/sass/components/variables";
 @import "../../../../../core/html/src/sass/components/variables-dark";
+@import "components/variables.override";
 
 // Bootstrap initializaton
 @import "../../../../../core/html/tools/node_modules/bootstrap/scss/functions";
