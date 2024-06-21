@@ -4,11 +4,77 @@ return array(
     'product' => array(
         'version' => '1.0.0',
         'name' => 'Bold',
-        'description' => 'Craft - Bootstrap 5 HTML Multi-purpose Admin Dashboard Theme',        
-        'preview' => 'https://preview.keenthemes.com/bold',
-        'purchase' => 'https://preview.keenthemes.com/bold',
-        "docs" => 'https://preview.keenthemes.com/html/bold/docs',
+        'name-free' => 'Bold HTML Free',
+        'name-pro' => 'Bold HTML Pro',
+        'description' => 'Bold HTML ' . (Theme::isFreeVersion() ? 'Free ' : 'Pro') .  ' - Bootstrap 5 HTML Multipurpose Admin Dashboard Theme',       
+        'preview' => 'https://preview.keenthemes.com/bold-html' . (Theme::isFreeVersion() ? '-free' : '-pro'),
+        'purchase' => 'https://keenthemes.com/products/bold-html-pro',   
+        'free-download' => 'https://keenthemes.com/products/bold-html-free',
+        "docs" => 'https://preview.keenthemes.com/html/bold-html-pro/docs',
         "login-path" => "authentication/sign-in/basic",
+        'comparision' => array(
+            array(
+                'label' => 'UI Elements',
+                'pro' => '100',
+                'free' => '20',           
+            ),            
+            array(
+                'label' => 'In-house Components',
+                'pro' => '40',
+                'free' => '20'                
+            ),    
+            array(
+                'label' => 'Crafted Pages',
+                'pro' => '20',
+                'free' => '5'                
+            ),     
+            array(
+                'label' => 'Complete Documentation',
+                'pro' => true,
+                'free' => true
+            ),           
+            array(
+                'label' => 'Product Support',
+                'url' => 'https://keenthemes.com/support',
+                'pro' => true,
+                'free' => false
+            ),
+            array(
+                'label' => 'Layout Builder',
+                'pro' => true,
+                'free' => false  
+            ),
+            array(
+                'label' => 'Source Vectors',
+                'pro' => true,
+                'free' => false             
+            ),
+            array(
+                'label' => 'Email Templates',
+                'pro' => true,
+                'free' => false             
+            ),
+            array(
+                'label' => 'User Management App',
+                'pro' => true,
+                'free' => false             
+            ),
+            array(
+                'label' => 'Calendar App',
+                'pro' => true,
+                'free' => false             
+            ),
+            array(
+                'label' => 'Chat App',
+                'pro' => true,
+                'free' => false             
+            ), 
+            array(
+                'label' => 'Customers App',
+                'pro' => true,
+                'free' => false             
+            )     
+        )
     ),
 
     // Meta
