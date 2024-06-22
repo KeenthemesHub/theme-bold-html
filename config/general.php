@@ -228,6 +228,10 @@ return array(
 
             'purchase' => array(
                 'enabled' => true
+            ),
+
+            'explore' => array(
+                'enabled' => true
             )
         )    
     )
